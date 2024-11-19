@@ -41,6 +41,27 @@
       <_ContentIncludedByDefault Remove="Views\Views\_ViewStart.cshtml" />
       <_ContentIncludedByDefault Remove="Views\_ViewImports.cshtml" />
       <_ContentIncludedByDefault Remove="Views\_ViewStart.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Birth\Error.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Birth\Form.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Birth\Result.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Calculator\Form.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Calculator\Result.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Models\Models\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Models\Models\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Models\Models\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Models\Models\**" />
     </ItemGroup>
 
 </Project>
