@@ -18,7 +18,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 
-namespace WebApplication1.Areas.Identity.Pages.Account
+namespace WebApplication3.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class ExternalLoginModel : PageModel

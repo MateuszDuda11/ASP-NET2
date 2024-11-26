@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebApplication1.Areas.Identity.Pages.Account.Manage
+namespace WebApplication3.Areas.Identity.Pages.Account.Manage
 {
     public class ExternalLoginsModel : PageModel
     {

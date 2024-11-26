@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-namespace WebApplication1.Areas.Identity.Pages.Account
+namespace WebApplication3.Areas.Identity.Pages.Account
 {
     public class LoginWithRecoveryCodeModel : PageModel
     {

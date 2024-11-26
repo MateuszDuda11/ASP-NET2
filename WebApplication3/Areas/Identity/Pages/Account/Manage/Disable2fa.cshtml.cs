@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace WebApplication1.Areas.Identity.Pages.Account.Manage
+namespace WebApplication3.Areas.Identity.Pages.Account.Manage
 {
     public class Disable2faModel : PageModel
     {
