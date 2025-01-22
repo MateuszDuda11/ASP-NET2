@@ -42,6 +42,6 @@ public class AppDbContext: DbContext
                 PhoneNumber = "123456789",
                 Created = DateTime.Now
             }
-            );
+        );
     }
 }
