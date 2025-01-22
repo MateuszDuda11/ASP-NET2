@@ -15,7 +15,7 @@ public class ContactController : Controller
                 Id = 1,
                 FirstName = "Mateusz",
                 LastName = "Duda",
-                Email = "mateusz.duda@gmail.com",
+                Email = "Mateusz.Duda@gmail.com",
                 PhoneNumber = "123 123 123",
                 BirthDate = new DateOnly(2003, 06, 17)
             }
@@ -28,7 +28,7 @@ public class ContactController : Controller
                 FirstName = "Paweł",
                 LastName = "Knap",
                 Email = "Pawel.knap@gmail.com",
-                PhoneNumber = "987 654 321",
+                PhoneNumber = "123 456 789",
                 BirthDate = new DateOnly(2004, 06, 21)
             }
         },
@@ -39,8 +39,8 @@ public class ContactController : Controller
                 Id = 3,
                 FirstName = "Dominik",
                 LastName = "Korbiel",
-                Email = "Dominik.korbiel@gmail.com",
-                PhoneNumber = "123 456 789",
+                Email = "Dominik.Korbiel@gmail.com",
+                PhoneNumber = "987 654 321",
                 BirthDate = new DateOnly(2003, 09, 22)
             }
         }
