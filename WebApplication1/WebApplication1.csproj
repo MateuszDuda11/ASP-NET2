@@ -28,6 +28,20 @@
       <_ContentIncludedByDefault Remove="Views\_ViewStart.cshtml" />
       <_ContentIncludedByDefault Remove="Home\Index.cshtml" />
       <_ContentIncludedByDefault Remove="Home\Privacy.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Birth\Error.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Birth\Form.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Birth\Result.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Calculator\Form.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Calculator\Result.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Contact\Add.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Contact\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\CalculatorError.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckInput Remove="Shared\Error.cshtml" />
+      <UpToDateCheckInput Remove="Shared\_Layout.cshtml" />
+      <UpToDateCheckInput Remove="Shared\_ValidationScriptsPartial.cshtml" />
     </ItemGroup>
 
 </Project>
