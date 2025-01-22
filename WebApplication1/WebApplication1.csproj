@@ -19,6 +19,15 @@
       <_ContentIncludedByDefault Remove="Shared\Error.cshtml" />
       <_ContentIncludedByDefault Remove="Shared\_Layout.cshtml" />
       <_ContentIncludedByDefault Remove="Shared\_ValidationScriptsPartial.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\About.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Calculator.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Home\Privacy.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Shared\CalculatorError.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\_ViewImports.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\_ViewStart.cshtml" />
+      <_ContentIncludedByDefault Remove="Home\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Home\Privacy.cshtml" />
     </ItemGroup>
 
 </Project>
