@@ -5,20 +5,23 @@
     Layout = "_Layout";
 }
 
-<h2>Dodaj kontakt</h2>
-<form asp-action="Add" asp-controller="Contact" method="post">
+<h2>Edytuj kontakt</h2>
+<form asp-action="Edit" asp-controller="Contact" method="post">
+    
+    <input asp-for="Id"/>
+    
     <div class="mb-3">
         <label class="form-label" asp-for="FirstName">Imię</label>
         <input class="form-control" asp-for="FirstName"/>
         <span class="text-danger" asp-validation-for="FirstName"></span>
     </div>
-    
+
     <div class="mb-3">
         <label class="form-label" asp-for="LastName">Nazwisko</label>
         <input class="form-control" asp-for="LastName"/>
         <span class="text-danger" asp-validation-for="LastName"></span>
     </div>
-    
+
     <div class="mb-3">
         <label class="form-label" asp-for="Email">Adres email</label>
         <input class="form-control" asp-for="Email"/>
@@ -39,16 +42,16 @@
 
     <div class="mb-3">
         <label class="form-label" asp-for="Category">Kategoria</label>
-        <select 
+        <select
             class="form-control"
             asp-for="Category"
             asp-items="@Html.GetEnumSelectList<Category>()">
         </select>
         <span class="text-danger" asp-validation-for="Category"></span>
     </div>
-    
-    <div class = "mb-md-3">
-    <button class="btn btn-outline-primary" type="submit">Zapisz</button>
+
+    <div class="mb-md-3">
+        <button class="btn btn-outline-primary" type="submit">Zapisz</button>
     </div>
-    
+
 </form>

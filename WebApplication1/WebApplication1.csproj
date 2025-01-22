@@ -42,6 +42,24 @@
       <UpToDateCheckInput Remove="Shared\Error.cshtml" />
       <UpToDateCheckInput Remove="Shared\_Layout.cshtml" />
       <UpToDateCheckInput Remove="Shared\_ValidationScriptsPartial.cshtml" />
+      <UpToDateCheckInput Remove="Views\Shared\Shared\Error.cshtml" />
+      <UpToDateCheckInput Remove="Views\Shared\Shared\_Layout.cshtml" />
+      <UpToDateCheckInput Remove="Views\Shared\Shared\_ValidationScriptsPartial.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.1">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="appsettings.Development.json">
+        <DependentUpon>appsettings.json</DependentUpon>
+      </Content>
     </ItemGroup>
 
 </Project>
