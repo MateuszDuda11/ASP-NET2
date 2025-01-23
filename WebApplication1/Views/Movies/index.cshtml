@@ -1,28 +1,22 @@
-﻿@model X.PagedList.IPagedList<Movie>
-@using X.PagedList.Mvc.Core
+﻿@model IEnumerable<Movie>
 
+<h2>Lista filmów</h2>
 <table class="table">
-    <thead>
     <tr>
+        <th>ID</th>
         <th>Tytuł</th>
-        <th>Reżyser</th>
-        <th>Rok</th>
         <th>Gatunek</th>
+        <th>Rok</th>
     </tr>
-    </thead>
-    <tbody>
     @foreach (var movie in Model)
     {
         <tr>
+            <td>@movie.Id</td>
             <td>@movie.Title</td>
-            <td>@movie.Director</td>
-            <td>@movie.Year</td>
             <td>@movie.Genre</td>
+            <td>@movie.Year</td>
         </tr>
     }
-    </tbody>
 </table>
 
-<div>
-    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
-</div>
+<a asp-action="Create" class="btn btn-primary">Dodaj nowy film</a>

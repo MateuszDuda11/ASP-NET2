@@ -1,23 +1,40 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using WebApplication1.Models;
-using X.PagedList;
-using X.PagedList.Mvc.Core;
-public class MoviesController : Controller
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+
+namespace WebApplication1.Controllers
 {
-    private readonly AppDbContext _context;
-
-    public MoviesController(AppDbContext context)
+    public class MoviesController : Controller
     {
-        _context = context;
-    }
+        private readonly MoviesDbContext _context;
 
-    public async Task<IActionResult> Index(int? page)
-    {
-        int pageSize = 20;  // Liczba elementów na stronie
-        int pageNumber = page ?? 1;  // Domyślnie strona 1
+        public MoviesController(MoviesDbContext context)
+        {
+            _context = context;
+        }
 
-        var movies = await _context.Movies.ToListAsync();
-        return View(movies.ToPagedList(pageNumber, pageSize));
+        public async Task<IActionResult> Index()
+        {
+            var movies = await _context.Movies.ToListAsync();
+            return View(movies);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(Movie movie)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(movie);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(movie);
+        }
     }
 }
