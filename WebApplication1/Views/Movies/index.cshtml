@@ -1,0 +1,28 @@
+﻿@model X.PagedList.IPagedList<Movie>
+@using X.PagedList.Mvc.Core
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Tytuł</th>
+        <th>Reżyser</th>
+        <th>Rok</th>
+        <th>Gatunek</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var movie in Model)
+    {
+        <tr>
+            <td>@movie.Title</td>
+            <td>@movie.Director</td>
+            <td>@movie.Year</td>
+            <td>@movie.Genre</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<div>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>
